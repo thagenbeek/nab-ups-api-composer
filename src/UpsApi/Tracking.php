@@ -63,11 +63,16 @@
   				$this->processResponse($resp);
   				
 			}
-			catch(Exception $ex)
+			catch(\Exception $ex)
 			{
 				echo"<pre>";
 				print_r($ex);
 				echo"</pre>";
+			}catch(\SoapFault $ex)
+			{
+				echo "<pre>";
+				print_r($ex);
+				echo "</pre>";
 			}
 		}
 		
