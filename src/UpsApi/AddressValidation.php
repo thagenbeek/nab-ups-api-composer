@@ -105,12 +105,12 @@
   					$this->isValid = false;
   				}
 			}
-			catch(Exception $ex)
+			catch(\Exception $ex)
 			{
 				echo"<pre>";
 				print_r($ex);
 				echo"</pre>";
-			}catch(SoapFault $e)
+			}catch(\SoapFault $e)
 			{
 				echo "<pre>";
 			        print_r($e);
